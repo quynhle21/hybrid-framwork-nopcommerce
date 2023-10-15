@@ -1,10 +1,11 @@
-package pageObjects;
+package pageObjects.users;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import PageUIs.HomePageUI;
 import commons.BasePage;
+import commons.PageGeneratorManager;
+import pageUIs.users.UserHomePageUI;
 
 public class HomePageObject extends BasePage {
 // Chứa những actions của page đó: click/ select/ verify/ getText/ ....
@@ -39,18 +40,21 @@ public class HomePageObject extends BasePage {
 
 
 
-	public void clickToRegisterLink() {
-		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
-		clickToElement(driver, HomePageUI.REGISTER_LINK);
+	public RegisterPageObject clickToRegisterLink() {
+		waitForElementClickable(driver, UserHomePageUI.REGISTER_LINK);
+		clickToElement(driver, UserHomePageUI.REGISTER_LINK);
+		return PageGeneratorManager.getRegisterPage(driver);
 	}
 
-	public void clickToLoginLink() {
-		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
-		clickToElement(driver, HomePageUI.LOGIN_LINK);
+	public LoginPageObject clickToLoginLink() {
+		waitForElementClickable(driver, UserHomePageUI.LOGIN_LINK);
+		clickToElement(driver, UserHomePageUI.LOGIN_LINK);
+	return PageGeneratorManager.getLoginPage(driver); 
 	}
 
-	public void clickToMyAccountLink() {
-		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
-		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+	public CustomerPageObject clickToMyAccountLink() {
+		waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+		clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+    return PageGeneratorManager.getCustomerPage(driver);
 	}
 }

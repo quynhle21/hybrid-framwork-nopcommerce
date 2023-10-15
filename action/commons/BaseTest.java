@@ -15,8 +15,8 @@ public class BaseTest {
 	private WebDriver driver;
 
 	protected WebDriver getBrowserDriver(String browserName) {
-       BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
-		switch (browserList) {
+       BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+		switch (browser) {
 		case CHROME:
 //			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 //			driver = new ChromeDriver();
@@ -42,14 +42,49 @@ public class BaseTest {
 
 		default:
 			throw new RuntimeException("Browser name is not support");
-			
-		}
-		
-		
+			}
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+		return driver;
+			
+		}
+		
+		protected WebDriver getBrowserDriver(String browserName, String url) {
+		       BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+				switch (browser) {
+				case CHROME:
+//					System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+//					driver = new ChromeDriver();
+					
+					//driver = WebDriverManager.chromedriver().create(); // tự tải chromedriver tương ứng với chrome browser + khởi tạo driver lên
+					
+					driver= new ChromeDriver();
+					break;
+				case FIREFOX:
+//					System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+//					driver = new FirefoxDriver();
+					
+					//driver = WebDriverManager.firefoxdriver().create(); 
+					driver= new FirefoxDriver();
+					break;
+				case EDGE:
+//					System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
+//					driver = new EdgeDriver();
+					//driver = WebDriverManager.edgedriver().create(); 
+					
+					driver= new EdgeDriver();
+					break;
+
+				default:
+					throw new RuntimeException("Browser name is not support");
+					
+				}
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        driver.get(url);
 		return driver;
         
 	}

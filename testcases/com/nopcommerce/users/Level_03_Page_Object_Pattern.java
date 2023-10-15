@@ -11,10 +11,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import commons.BasePage;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.users.CustomerPageObject;
+import pageObjects.users.HomePageObject;
+import pageObjects.users.LoginPageObject;
+import pageObjects.users.RegisterPageObject;
 
 public class Level_03_Page_Object_Pattern extends BasePage {
 	private WebDriver driver;;
@@ -151,7 +151,7 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 		registerPage.clickToRegisterButton();
 
-		Assert.assertEquals(registerPage.getRegisterCuccessMessage(), "Your registration completed");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
 	registerPage.clickToHomePageLogo();
 	

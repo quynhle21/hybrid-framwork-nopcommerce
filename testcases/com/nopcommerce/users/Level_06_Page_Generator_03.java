@@ -13,12 +13,13 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
+import commons.PageGeneratorManager;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Level_04_Multiple_Browser extends BaseTest {
+public class Level_06_Page_Generator_03 extends BaseTest {
 	private WebDriver driver;
 
 	private String emailAddress = getEmailAddress();
@@ -27,21 +28,20 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	private CustomerPageObject customerPage;
 	private LoginPageObject loginPage;
 
-	@Parameters("browser")
+	@Parameters({"browser", "userUrl"})
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String url) {
+		//driver = getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName, url);
+		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
 	@Test
 	public void Register_01_Empty_Data() {
+		// hàm nào có sự kiện chuyển trang từ A sang B
+		// Thì sẽ đưa việc khởi tạo class B vào trong hàm này luôn
 
-
-		homePage = new HomePageObject(driver);
-		
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.clickToRegisterButton();
 
@@ -56,13 +56,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_02_Invalid_Email() {
 
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextbox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -78,13 +74,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 	@Test
 	public void Register_03_Invalid_Password() {
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextbox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -102,13 +94,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_04_Incorrect_Confirm_Password() {
 
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextbox("Hi");
 		registerPage.enterToLastNameTextbox("Le");
@@ -118,19 +106,16 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 
-		Assert.assertEquals(registerPage.getConfirmPasswordErrorMessage(), "The password and confirmation password do not match.");
+		Assert.assertEquals(registerPage.getConfirmPasswordErrorMessage(),
+				"The password and confirmation password do not match.");
 
 	}
 
 	@Test
 	public void Register_05_Success() {
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextbox("Hi");
 		registerPage.enterToLastNameTextbox("Le");
@@ -142,35 +127,23 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
-	registerPage.clickToHomePageLogo();
-	
-	homePage = new HomePageObject(driver);
-	
-	homePage.clickToLoginLink();
-	loginPage = new LoginPageObject(driver); 
-	
-	
-	loginPage.enterToEmailTextBox(emailAddress);
-	loginPage.enterToPassWordTextbox("123123");
-	loginPage.clickToLoginButton();
-	
-	homePage = new HomePageObject(driver);
-	
-	homePage.clickToMyAccountLink();
-	
-	customerPage = new CustomerPageObject(driver);
-	
-	
-	Assert.assertEquals(customerPage.getFirstNameAttributeValue(), "Hi");
-	Assert.assertEquals(customerPage.getLastNameAttributeValue(), "Le");
-	Assert.assertEquals(customerPage.getEmailAttributeValue(), emailAddress);
-	
-	
+		homePage = registerPage.clickToHomePageLogo();
+
+		loginPage = homePage.clickToLoginLink();
+
+		homePage = loginPage.loginAsUser(emailAddress, "123123");
+
+		customerPage = homePage.clickToMyAccountLink();
+
+		Assert.assertEquals(customerPage.getFirstNameAttributeValue(), "Hi");
+		Assert.assertEquals(customerPage.getLastNameAttributeValue(), "Le");
+		Assert.assertEquals(customerPage.getEmailAttributeValue(), emailAddress);
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//quitBrowserDriver();
+		// quitBrowserDriver();
 	}
 
 	public String getEmailAddress() {

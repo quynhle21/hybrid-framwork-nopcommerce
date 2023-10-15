@@ -18,7 +18,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Level_04_Multiple_Browser extends BaseTest {
+public class Level_06_Page_Generator_01 extends BaseTest {
 	private WebDriver driver;
 
 	private String emailAddress = getEmailAddress();

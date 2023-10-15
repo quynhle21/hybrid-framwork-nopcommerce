@@ -11,21 +11,21 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
 import commons.BaseTest;
-import pageObjects.users.CustomerPageObject;
-import pageObjects.users.HomePageObject;
-import pageObjects.users.LoginPageObject;
-import pageObjects.users.RegisterPageObject;
+import pageFactory.CustomerPageFactory;
+import pageFactory.HomePageFactory;
+import pageFactory.LoginPageFactory;
+import pageFactory.RegisterPageFactory;
 
-public class Level_04_Multiple_Browser extends BaseTest {
+
+public class Level_05_Page_Factory extends BaseTest {
 	private WebDriver driver;
 
 	private String emailAddress = getEmailAddress();
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private CustomerPageObject customerPage;
-	private LoginPageObject loginPage;
+	private HomePageFactory homePage;
+	private RegisterPageFactory registerPage;
+	private CustomerPageFactory customerPage;
+	private LoginPageFactory loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -37,11 +37,11 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	public void Register_01_Empty_Data() {
 
 
-		homePage = new HomePageObject(driver);
+		homePage = new HomePageFactory(driver);
 		
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPageFactory(driver);
 
 		registerPage.clickToRegisterButton();
 
@@ -58,11 +58,11 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
+		homePage = new HomePageFactory(driver);
 
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPageFactory(driver);
 
 		registerPage.enterToFirstNameTextbox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -80,11 +80,11 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	public void Register_03_Invalid_Password() {
 		registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
+		homePage = new HomePageFactory(driver);
 
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPageFactory(driver);
 
 		registerPage.enterToFirstNameTextbox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -104,11 +104,11 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
+		homePage = new HomePageFactory(driver);
 
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPageFactory(driver);
 
 		registerPage.enterToFirstNameTextbox("Hi");
 		registerPage.enterToLastNameTextbox("Le");
@@ -126,11 +126,11 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	public void Register_05_Success() {
 		registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
+		homePage = new HomePageFactory(driver);
 
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPageFactory(driver);
 
 		registerPage.enterToFirstNameTextbox("Hi");
 		registerPage.enterToLastNameTextbox("Le");
@@ -144,21 +144,21 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 	registerPage.clickToHomePageLogo();
 	
-	homePage = new HomePageObject(driver);
+	homePage = new HomePageFactory(driver);
 	
 	homePage.clickToLoginLink();
-	loginPage = new LoginPageObject(driver); 
+	loginPage = new LoginPageFactory(driver); 
 	
 	
 	loginPage.enterToEmailTextBox(emailAddress);
 	loginPage.enterToPassWordTextbox("123123");
 	loginPage.clickToLoginButton();
 	
-	homePage = new HomePageObject(driver);
+	homePage = new HomePageFactory(driver);
 	
 	homePage.clickToMyAccountLink();
 	
-	customerPage = new CustomerPageObject(driver);
+	customerPage = new CustomerPageFactory(driver);
 	
 	
 	Assert.assertEquals(customerPage.getFirstNameAttributeValue(), "Hi");

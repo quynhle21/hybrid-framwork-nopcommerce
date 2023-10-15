@@ -96,7 +96,10 @@ driver.get("https://demo.nopcommerce.com/");
 
 	  
 	  
+	  
   }
+  
+  
   @Test
   public void Register_05_Success() {
     driver.get("https://demo.nopcommerce.com/");

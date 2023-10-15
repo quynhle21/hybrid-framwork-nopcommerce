@@ -1,10 +1,10 @@
-package PageUIs;
+package pageUIs.users;
 
-public class HomePageUI {
+public class UserHomePageUI {
 // chứa những cái locator/ element của page 
 	
 // Biến: Variable/ Property
-	public static final String REGISTER_LINK = "//a[@class='ico-register']";
+	public static final String REGISTER_LINK = "Xpath=//a[@class='ico-register']";
 	
 	//public: Truy cập đc từ class bên ngoài package theo các thông thường
 	// private: các class bên ngoài ko truy cập được
@@ -24,10 +24,11 @@ public class HomePageUI {
 	// Cú pháp xpath
 	
 	
-	public static final String LOGIN_LINK = "//a[@class='ico-login']";
+	public static final String LOGIN_LINK = "Xpath=//a[@class='ico-login']";
 	
 
-	public static final String MY_ACCOUNT_LINK = "//a[@class='ico-account']";
+	public static final String MY_ACCOUNT_LINK = "XPATH=//a[@class='ico-account']";
+	public static final String USER_LOGOUT_LINK = "XPATH=//a[@class='ico-logout']";
 	
 	
 	
