@@ -1,0 +1,18 @@
+[02-11-2023 16:45:27.317 INFO com.nopcommerce.users.Level_17_Extent_V2] - Starting delete all file in ReportNG screenshot
+[02-11-2023 16:45:27.326 INFO com.nopcommerce.users.Level_17_Extent_V2] - Delete successfully
+[02-11-2023 16:45:36.770 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 01: Verify Register link is displayed
+[02-11-2023 16:45:36.909 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED------
+[02-11-2023 16:45:36.911 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 02: CLick to Register link
+[02-11-2023 16:45:38.117 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 03: CLick to Register button
+[02-11-2023 16:45:38.571 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 04: Verify error message at Firstname textbox 
+[02-11-2023 16:45:38.682 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ PASSED-------
+[02-11-2023 16:45:38.683 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 05: Verify error message at Lastname textbox 
+[02-11-2023 16:45:38.733 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED-------
+[02-11-2023 16:45:38.748 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 01: Enter Firstname textbox with value isfirstName
+[02-11-2023 16:45:40.043 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 02: Enter Lastname textbox with value islastName
+[02-11-2023 16:45:40.151 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 03: Enter Email textbox with value isemailAddress
+[02-11-2023 16:45:40.244 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 04: Enter Password textbox with value ispassword
+[02-11-2023 16:45:40.329 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 05: Enter Confirm Password textbox with value ispassword
+[02-11-2023 16:45:40.407 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 06: CLick to Register button 
+[02-11-2023 16:45:42.307 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 07: Verify success message
+[02-11-2023 16:45:42.388 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED-------

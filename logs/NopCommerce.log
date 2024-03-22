@@ -1,0 +1,28 @@
+[2023-10-21 18:15:55,111 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 01: Verify Register link is displayed
+[2023-10-21 18:15:55,281 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 02: CLick to Register link
+[2023-10-21 18:15:56,843 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 03: CLick to Register button
+[2023-10-21 18:15:57,167 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 04: Verify error message at Firstname textbox 
+[2023-10-21 18:15:57,219 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 05: Verify error message at Lastname textbox 
+[2023-10-21 18:15:57,268 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 06: Enter Firstname textbox 
+[2023-10-21 18:15:57,345 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 07: Enter Lastname textbox 
+[2023-10-21 18:15:57,430 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 08: Enter Email textbox 
+[2023-10-21 18:15:57,559 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 09: Enter Password textbox 
+[2023-10-21 18:15:57,656 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 10: Enter Confirm Password textbox 
+[2023-10-21 18:15:57,759 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 11: CLick to Register button 
+[2023-10-21 18:15:58,586 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Stepp 12: Verify success message
+[2023-10-21 18:22:12,654 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 01: Verify Register link is displayed
+[2023-10-21 18:22:12,790 INFO com.nopcommerce.users.Level_15_Log] - ------ FAILED
+[2023-10-21 18:22:12,791 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 02: CLick to Register link
+[2023-10-21 18:22:14,557 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 03: CLick to Register button
+[2023-10-21 18:22:14,872 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 04: Verify error message at Firstname textbox 
+[2023-10-21 18:22:14,937 INFO com.nopcommerce.users.Level_15_Log] - ------ PASSED
+[2023-10-21 18:22:14,937 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 05: Verify error message at Lastname textbox 
+[2023-10-21 18:22:14,978 INFO com.nopcommerce.users.Level_15_Log] - ------ FAILED
+[2023-10-21 18:22:14,978 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 06: Enter Firstname textbox 
+[2023-10-21 18:22:15,042 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 07: Enter Lastname textbox 
+[2023-10-21 18:22:15,119 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 08: Enter Email textbox 
+[2023-10-21 18:22:15,228 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 09: Enter Password textbox 
+[2023-10-21 18:22:15,306 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 10: Enter Confirm Password textbox 
+[2023-10-21 18:22:15,394 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 11: CLick to Register button 
+[2023-10-21 18:22:19,217 INFO com.nopcommerce.users.Level_15_Log] - User_01 - Step 12: Verify success message
+[2023-10-21 18:22:19,284 INFO com.nopcommerce.users.Level_15_Log] - ------ FAILED

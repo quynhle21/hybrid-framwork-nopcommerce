@@ -19,7 +19,8 @@ public class RegisterPageUI {
 	public static final String CONFIRM_PASSWORD_TEXTBOX = "xpath=//input[@id='ConfirmPassword']";
 	
 	
-	public static final String HOMEPAGE_LOGO_IMAGE = "xpath=//div[@class='header-logo']//img";
+	
+	
 	
 	
 	

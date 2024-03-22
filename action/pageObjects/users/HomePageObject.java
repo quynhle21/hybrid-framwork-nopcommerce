@@ -3,11 +3,12 @@ package pageObjects.users;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import commons.BasePage;
+import commons.BaseElement;
 import commons.PageGeneratorManager;
+import io.qameta.allure.Step;
 import pageUIs.users.UserHomePageUI;
 
-public class HomePageObject extends BasePage {
+public class HomePageObject extends BaseElement {
 // Chứa những actions của page đó: click/ select/ verify/ getText/ ....
 
 // Mỗi page object tương ứng vs 1 page UIs ở Interface
@@ -16,6 +17,7 @@ public class HomePageObject extends BasePage {
 
 
 	public HomePageObject(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
@@ -39,22 +41,50 @@ public class HomePageObject extends BasePage {
 	
 
 
-
+    @Step("Click to Register Link")
 	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickable(driver, UserHomePageUI.REGISTER_LINK);
 		clickToElement(driver, UserHomePageUI.REGISTER_LINK);
 		return PageGeneratorManager.getRegisterPage(driver);
 	}
 
+    @Step("Click to Login Link")
 	public LoginPageObject clickToLoginLink() {
 		waitForElementClickable(driver, UserHomePageUI.LOGIN_LINK);
 		clickToElement(driver, UserHomePageUI.LOGIN_LINK);
 	return PageGeneratorManager.getLoginPage(driver); 
 	}
 
-	public CustomerPageObject clickToMyAccountLink() {
-		waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
-		clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
-    return PageGeneratorManager.getCustomerPage(driver);
+    @Step("Click to Account Link")
+    public CustomerPageObject clickToMyAccountLink() {
+    	waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+    	clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+    	return PageGeneratorManager.getCustomerPage(driver);
+    }
+	
+    public CustomerPageObject openMyAccountLink() {
+		String myAccountLink = getElementAttribute(driver, UserHomePageUI.MY_ACCOUNT_LINK, "href");
+        openPageUrl(driver, myAccountLink);
+		return PageGeneratorManager.getCustomerPage(driver);
 	}
+    
+    
+    
+    
+
+    @Step("Click to Logout Link")
+    public void clickToLogoutLink() {
+    	waitForElementClickable(driver, UserHomePageUI.USER_LOGOUT_LINK);
+    	clickToElement(driver, UserHomePageUI.USER_LOGOUT_LINK);
+    }
+
+    @Step("Verify the register link is displayed")
+	public boolean isRegisterLinkDisplayed() {
+		waitForElementVisible(driver, UserHomePageUI.REGISTER_LINK);
+	 return isElementDisplayed(driver, UserHomePageUI.REGISTER_LINK);
+	 
+	}
+
+	
+	
 }

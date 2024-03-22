@@ -1,0 +1,107 @@
+[31-10-2023 16:03:03.769 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 01: Verify Register link is displayed
+[31-10-2023 16:03:04.065 INFO com.nopcommerce.users.Level_16_ReportNG] - ------ FAILED------
+[31-10-2023 16:03:04.067 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 02: CLick to Register link
+[31-10-2023 16:03:05.501 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 03: CLick to Register button
+[31-10-2023 16:03:06.083 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 04: Verify error message at Firstname textbox 
+[31-10-2023 16:03:06.229 INFO com.nopcommerce.users.Level_16_ReportNG] - ------ PASSED-------
+[31-10-2023 16:03:06.230 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 05: Verify error message at Lastname textbox 
+[31-10-2023 16:03:06.366 INFO com.nopcommerce.users.Level_16_ReportNG] - ------ FAILED-------
+[31-10-2023 16:03:06.540 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 01: Enter Firstname textbox with value isfirstName
+[31-10-2023 16:03:09.312 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 02: Enter Lastname textbox with value islastName
+[31-10-2023 16:03:09.470 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 03: Enter Email textbox with value isemailAddress
+[31-10-2023 16:03:09.591 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 04: Enter Password textbox with value ispassword
+[31-10-2023 16:03:09.729 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 05: Enter Confirm Password textbox with value ispassword
+[31-10-2023 16:03:09.874 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 06: CLick to Register button 
+[31-10-2023 16:03:12.133 INFO com.nopcommerce.users.Level_16_ReportNG] - Register - Step 07: Verify success message
+[31-10-2023 16:03:12.246 INFO com.nopcommerce.users.Level_16_ReportNG] - ------ FAILED-------
+[02-11-2023 16:45:27.317 INFO com.nopcommerce.users.Level_17_Extent_V2] - Starting delete all file in ReportNG screenshot
+[02-11-2023 16:45:27.326 INFO com.nopcommerce.users.Level_17_Extent_V2] - Delete successfully
+[02-11-2023 16:45:36.770 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 01: Verify Register link is displayed
+[02-11-2023 16:45:36.909 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED------
+[02-11-2023 16:45:36.911 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 02: CLick to Register link
+[02-11-2023 16:45:38.117 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 03: CLick to Register button
+[02-11-2023 16:45:38.571 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 04: Verify error message at Firstname textbox 
+[02-11-2023 16:45:38.682 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ PASSED-------
+[02-11-2023 16:45:38.683 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 05: Verify error message at Lastname textbox 
+[02-11-2023 16:45:38.733 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED-------
+[02-11-2023 16:45:38.748 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 01: Enter Firstname textbox with value isfirstName
+[02-11-2023 16:45:40.043 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 02: Enter Lastname textbox with value islastName
+[02-11-2023 16:45:40.151 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 03: Enter Email textbox with value isemailAddress
+[02-11-2023 16:45:40.244 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 04: Enter Password textbox with value ispassword
+[02-11-2023 16:45:40.329 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 05: Enter Confirm Password textbox with value ispassword
+[02-11-2023 16:45:40.407 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 06: CLick to Register button 
+[02-11-2023 16:45:42.307 INFO com.nopcommerce.users.Level_17_Extent_V2] - Register - Step 07: Verify success message
+[02-11-2023 16:45:42.388 INFO com.nopcommerce.users.Level_17_Extent_V2] - ------ FAILED-------
+[02-11-2023 23:23:51.573 INFO com.nopcommerce.users.Level_19_Extent_V4] - Starting delete all file in ReportNG screenshot
+[02-11-2023 23:23:51.585 INFO com.nopcommerce.users.Level_19_Extent_V4] - Delete successfully
+[02-11-2023 23:57:57.835 INFO com.nopcommerce.users.Level_17_Extent_V5] - Starting delete all file in ReportNG screenshot
+[02-11-2023 23:57:57.842 INFO com.nopcommerce.users.Level_17_Extent_V5] - Delete successfully
+[03-11-2023 00:01:09.145 INFO com.nopcommerce.users.Level_17_Extent_V5] - Starting delete all file in ReportNG screenshot
+[03-11-2023 00:01:09.149 INFO com.nopcommerce.users.Level_17_Extent_V5] - Delete successfully
+[03-11-2023 00:03:50.181 INFO com.nopcommerce.users.Level_17_Extent_V5] - Starting delete all file in ReportNG screenshot
+[03-11-2023 00:03:50.187 INFO com.nopcommerce.users.Level_17_Extent_V5] - Delete successfully
+[03-11-2023 00:05:50.619 INFO com.nopcommerce.users.Level_17_Extent_V5] - Starting delete all file in ReportNG screenshot
+[03-11-2023 00:05:50.624 INFO com.nopcommerce.users.Level_17_Extent_V5] - Delete successfully
+[03-11-2023 00:21:44.656 INFO com.nopcommerce.users.Level_17_Extent_V5] - Starting delete all file in ReportNG screenshot
+[03-11-2023 00:21:44.664 INFO com.nopcommerce.users.Level_17_Extent_V5] - Delete successfully
+[08-11-2023 21:37:39.648 INFO com.nopcommerce.users.Level_18_Allure_Report] - Starting delete all file in ReportNG screenshot
+[08-11-2023 21:37:39.659 INFO com.nopcommerce.users.Level_18_Allure_Report] - Delete successfully
+[08-11-2023 21:38:22.005 INFO com.nopcommerce.users.Level_18_Allure_Report] - Starting delete all file in ReportNG screenshot
+[08-11-2023 21:38:22.014 INFO com.nopcommerce.users.Level_18_Allure_Report] - Delete successfully
+[08-11-2023 21:39:49.171 INFO com.nopcommerce.users.Level_18_Allure_Report] - Starting delete all file in ReportNG screenshot
+[08-11-2023 21:39:49.180 INFO com.nopcommerce.users.Level_18_Allure_Report] - Delete successfully
+[08-11-2023 21:42:18.861 INFO com.nopcommerce.users.Level_18_Allure_Report] - Starting delete all file in ReportNG screenshot
+[08-11-2023 21:42:18.869 INFO com.nopcommerce.users.Level_18_Allure_Report] - Delete successfully
+[16-11-2023 17:12:25.886 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:12:25.973 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:12:26.031 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:12:26.077 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:12:26.234 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:12:26.327 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:12:26.680 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:12:26.812 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ FAILED------
+[16-11-2023 17:15:23.104 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:15:23.248 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:15:23.326 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:15:23.397 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:15:23.575 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:15:23.688 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:15:24.248 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:15:24.382 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ FAILED------
+[16-11-2023 17:26:12.668 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:26:12.828 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:26:12.904 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:26:12.990 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:26:13.208 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:26:13.403 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:26:13.990 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:26:14.154 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ FAILED------
+[16-11-2023 17:28:42.105 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:28:42.250 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:28:42.335 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:28:42.405 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:28:42.573 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:28:42.801 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:28:45.238 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:32:30.435 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:32:30.544 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:32:30.671 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:32:30.750 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:32:30.937 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:32:31.076 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:32:33.599 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:53:10.567 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:53:10.639 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:53:10.725 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:53:10.784 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:53:10.903 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:53:10.990 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:53:13.361 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[16-11-2023 17:53:44.010 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify First Name textbox is undisplayed
+[16-11-2023 17:58:50.066 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:58:50.174 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:58:50.232 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:58:50.306 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:58:50.484 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
+[16-11-2023 17:58:50.600 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
+[16-11-2023 17:58:53.104 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed

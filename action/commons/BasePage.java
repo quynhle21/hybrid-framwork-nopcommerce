@@ -7,8 +7,10 @@ import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,7 +27,7 @@ import pageObjects.users.DownloadableProductPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.RewardPointsPageObject;
 import pageUIs.admin.AdminDashboardPageUI;
-import pageUIs.users.BasePageUI;
+import pageUIs.users.BaseElementUI;
 import pageUIs.users.SideBarMyAccountPaseUI;
 import pageUIs.users.UserHomePageUI;
 
@@ -324,9 +326,35 @@ public class BasePage {
 		}
 	}
 
+	 // case 1: Element có hiển thị trên Ui và có trong HTML: isDisplayed trả về true
+	// case 2: Element ko hiển thị trên Ui và vẫn có trong HTML: isDisplayed trả về false
+	
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
-		return getWebElement(driver, locator).isDisplayed();
+	return getWebElement(driver, locator).isDisplayed();
 	}
+	
+	public void setImplicitWait(WebDriver driver, long timeout) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
+	}
+	
+	
+	// case 3: Element ko hiển thị trên Ui và ko trong HTML: tự gán bằng false
+	public boolean isElementUnDisplayed(WebDriver driver, String locator) {
+		// trc khi find elemnet thi set thoi gian ngan
+		setImplicitWait(driver, shortTimeout);
+		List<WebElement> element = getListWebElement( driver, locator);
+		
+		//tra lai timeout mac dinh cho cac step con lai
+		setImplicitWait(driver, longTimeout);
+		if (element.size() == 0) {  // Element ko co tren UI va ko co Dom -> check co undisplayed ko -> Co
+			return true;
+		} else if (element.size() > 0  && !element.get(0).isDisplayed()) { // Element ko tren UI va co Dom -> check co undisplayed ko -> Co
+			return true;
+		} else { // element co tren UI va co DOM
+			return false;
+		}
+	}
+	
 	public boolean isElementDisplayed(WebDriver driver, String locator, String... restParams) {
 		return getWebElement(driver, getDynamicLocator(locator, restParams)).isDisplayed();
 	}
@@ -517,6 +545,15 @@ public class BasePage {
 				.until(ExpectedConditions.invisibilityOfAllElements(getListWebElement(driver, locator)));
 	}
 
+	public Set<Cookie> getBrowserCookies(WebDriver driver){
+		return driver.manage().getCookies();
+		}
+	
+	public void setCookie(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+	}
 	
 	
 	
@@ -565,6 +602,7 @@ public class BasePage {
 	}
 	
 	public void uploadMultipleFiles(WebDriver driver, String...fileNames) {
+
 		     String filePath = GlobalConstants.UPLOAD_PATH;
 		     
 		     String fullFileName = "";
@@ -572,11 +610,12 @@ public class BasePage {
 				  fullFileName = fullFileName + filePath + file + "\n";
 			}
 		     fullFileName = fullFileName.trim();
-		     getWebElement(driver, BasePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+		     getWebElement(driver, BaseElementUI.UPLOAD_FILE_TYPE ).sendKeys(fullFileName);
 	
 	}
 	
 	
+	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 	
 	

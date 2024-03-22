@@ -27,12 +27,7 @@ public class Level_14_Assert_Verify extends BaseTest {
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
 
-	// Thuộc sidebar sẽ gọi các hàm trong SideBar dùng đc, các hàm còn lại thì ko
-	private CustomerPageObject customerPage;
-	private DownloadableProductPageObject downloadableProductPage;
-	private RewardPointsPageObject rewardPointPage;
-	private AddressesPageObject addressesPage;
-
+	
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -43,9 +38,22 @@ public class Level_14_Assert_Verify extends BaseTest {
 
 	@Test
 	public void User_01_Register() {
+		// Verify Register link displayed
+	
+		verifyFalse(homePage.isRegisterLinkDisplayed());
 
+		
 		registerPage = homePage.clickToRegisterLink();
-
+		registerPage.clickToRegisterButton();
+		
+		// Verify error message at Firstname textbox -> Passed
+		
+		verifyEquals(registerPage.getFirstNameErrorMessage(), "First name is required.");
+		
+		
+		// Verify error message at Lastname textbox -> Failed
+		verifyEquals(registerPage.getLastNameErrorMessage(), "Last name is required");
+		
 		registerPage.enterToFirstNameTextbox("Hi");
 		registerPage.enterToLastNameTextbox("Le");
 		registerPage.enterToEmailTextbox(emailAddress);
@@ -53,29 +61,14 @@ public class Level_14_Assert_Verify extends BaseTest {
 		registerPage.enterToConfirmPasswordTextbox("123123");
 
 		registerPage.clickToRegisterButton();
-
-		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-
-	
-	}
-	@Test
-	public void User_02_Login() {
-		homePage = registerPage.clickToHomePageLogo();
-
-		loginPage = homePage.clickToLoginLink();
-
-		homePage = loginPage.loginAsUser(emailAddress, "123123");
 		
 
-		customerPage = homePage.clickToMyAccountLink();
-
-		Assert.assertEquals(customerPage.getFirstNameAttributeValue(), "Hi");
-		Assert.assertEquals(customerPage.getLastNameAttributeValue(), "Le");
-		Assert.assertEquals(customerPage.getEmailAttributeValue(), emailAddress);
+		// Verify success message -> Failed
+	     verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed.");
 
 	
-
 	}
+	
 
 	
 

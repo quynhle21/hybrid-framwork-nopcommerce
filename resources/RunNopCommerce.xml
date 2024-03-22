@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="NopCommerce UI Automation">
- <parameter name="userUrl" value="https://demo.nopcommerce.com/" /> 
- <parameter name="AdminUrl" value="https://admin-demo.nopcommerce.com/" /> 
+<listeners>
+     <listener class-name= "commons.MethodListener" />
+     <listener class-name= "reportConfig.AllureTestListener" />
  
-  <test name="Run on Firefox">
+</listeners>
+
+  <test name="Run on Firefox" preserve-order="true">
   <parameter name ="browser" value="Firefox" />
     <classes>
-      <class name="com.nopcommerce.users.Level_11_Dynamic_Locator_Rest_Param"/>
+      <class name="com.nopcommerce.cookie.Common_Register"/>
+      <class name="com.nopcommerce.cookie.Product_Detail"/>
+      <class name="com.nopcommerce.cookie.Order"/>
+      <class name="com.nopcommerce.cookie.Payment"/>
     </classes>
   </test> 
   
