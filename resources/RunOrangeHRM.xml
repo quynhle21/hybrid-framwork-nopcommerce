@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Orange UI Automation">
+<listeners>
+     <listener class-name= "commons.MethodListener" />
+     <listener class-name= "reportConfig.ExtentTestListener" />
+ 
+</listeners>
+
+<parameter name = "url" value="http://localhost:90/orangehrm-5.5/web/index.php/auth/login"/>
+
+  <test name="Run on Firefox" preserve-order="true">
+  <parameter name ="browser" value="Firefox" />
+    <classes>
+      <class name="com.orangehrm.pim.PIM_01_Employee"/>
+     
+    </classes>
+  </test> 
+  
+ 
+  
+  
+</suite> <!-- Suite -->

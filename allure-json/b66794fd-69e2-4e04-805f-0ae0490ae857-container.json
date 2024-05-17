@@ -1,0 +1,1 @@
+{"uuid":"b66794fd-69e2-4e04-805f-0ae0490ae857","name":"com.orangehrm.pim.PIM_01_Employee","children":["a61913fc-d6cd-4e39-ac9e-a08caae06ec1"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1714041121370,"stop":1714041188550}],"afters":[],"start":1714041121194,"stop":1714041229446}

@@ -29,6 +29,12 @@
 	<classpathentry kind="lib" path="libAllure/bsh-2.0b6.jar"/>
 	<classpathentry kind="lib" path="libAllure/jcommander-1.72.jar"/>
 	<classpathentry kind="lib" path="libAllure/slf4j-api-1.7.36.jar"/>
-	<classpathentry kind="lib" path="libSelenium/selenium-server-4.15.0.jar"/>
+	<classpathentry kind="lib" path="libExtent5/extentreports-5.1.0.jar"/>
+	<classpathentry kind="lib" path="libExtent5/freemarker-2.3.32.jar"/>
+	<classpathentry kind="lib" path="libExtent5/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="libExtent5/lombok-1.18.26.jar"/>
+	<classpathentry kind="lib" path="libExtent5/reactive-streams-1.0.4.jar"/>
+	<classpathentry kind="lib" path="libExtent5/rxjava-3.1.6.jar"/>
+	<classpathentry kind="lib" path="libSelenium/selenium-server-4.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

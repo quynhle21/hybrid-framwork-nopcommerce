@@ -105,3 +105,78 @@
 [16-11-2023 17:58:50.484 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is displayed
 [16-11-2023 17:58:50.600 INFO com.facebook.home.Level_19_Element_Undisplayed] - ------ PASSED------
 [16-11-2023 17:58:53.104 INFO com.facebook.home.Level_19_Element_Undisplayed] - Verrify confirm email textbox is undisplayed
+[22-04-2024 12:41:56.561 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[22-04-2024 12:41:56.569 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (0afb42a6-e84a-473f-86c8-1e165b420107)
+[22-04-2024 12:42:03.919 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[22-04-2024 12:42:03.920 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = chromedriver: chrome on windows (e379509a733fe5231a227118a65443e4)
+[22-04-2024 12:42:11.582 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[22-04-2024 12:42:11.582 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = edgedriver: microsoftedge on windows (a9e7a7149199f3b6a674752f9638d9b5)
+[25-04-2024 17:05:22.825 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:05:22.846 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (ca6e2af0-4fa4-45e5-98ca-8cf21d0b4d84)
+[25-04-2024 17:33:37.080 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:33:37.102 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (08bc6dc3-b8b6-440c-8327-3ce62a5d1f44)
+[25-04-2024 17:35:33.905 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:35:33.930 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (ab4a8251-c4ea-4cd7-ab3a-13cd0622ad84)
+[25-04-2024 17:39:47.990 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:39:48.011 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (f9322b67-461a-47e1-b382-55289b17033c)
+[25-04-2024 17:41:52.529 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:41:52.552 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (7bdfc651-6921-45e6-a2ad-3d1ba1b96899)
+[25-04-2024 17:50:13.509 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:50:13.537 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (c26620e0-c72c-4ab0-8448-ad597c4f8fc4)
+[25-04-2024 17:54:01.733 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:54:01.886 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (10cb7dda-0f2c-4eee-aedf-40240f8bffe7)
+[25-04-2024 17:56:58.557 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:56:58.576 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (f80dffe0-2641-4b29-9664-4f704356bf04)
+[25-04-2024 17:58:58.738 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 17:58:58.767 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (310fb8d8-5b21-41e8-a5dc-469b1dcdc6c2)
+[25-04-2024 18:01:35.321 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[25-04-2024 18:01:35.336 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (61f05433-5829-4080-9957-56260c2a0e87)
+[26-04-2024 10:40:10.188 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 10:40:10.225 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (00ce08b7-9a71-42b4-b6e1-25a6b436178c)
+[26-04-2024 10:51:50.458 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 10:51:50.467 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (a1012748-a1ee-48d2-a1f0-093292bae684)
+[26-04-2024 10:57:45.828 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 10:57:45.841 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (78ce595a-c5b9-416e-baa2-bf552bf0a101)
+[26-04-2024 11:10:38.423 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 11:10:38.442 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (cce060d4-fa7e-4d40-93a7-be5886812957)
+[26-04-2024 11:34:04.864 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 11:34:04.880 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (bd48e960-6753-47d3-b239-4ecbfd11b141)
+[26-04-2024 11:50:35.995 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 11:50:36.004 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (88f66495-581d-4ecc-a572-1eaf65fd92fb)
+[26-04-2024 11:57:23.217 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 11:57:23.240 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (9102917a-79d5-41fd-a4e6-420080930cb5)
+[26-04-2024 12:01:35.238 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 12:01:35.250 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (b954e34f-3c0c-45bf-9280-0a8947c46a97)
+[26-04-2024 12:05:50.439 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[26-04-2024 12:05:50.456 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (424a8226-d39b-4875-acb0-6a615b209b19)
+[02-05-2024 10:40:28.079 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[02-05-2024 10:40:28.383 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (af86a1ae-52cc-4d3a-94f4-fea5328d3b9b)
+[02-05-2024 10:40:54.339 INFO com.orangehrm.pim.PIM_01_Employee] - Timed out waiting for driver server to stop.
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [af86a1ae-52cc-4d3a-94f4-fea5328d3b9b, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:21578, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8096, moz:profile: C:\Users\ADMIN\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:21578/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: af86a1ae-52cc-4d3a-94f4-fea5328d3b9b
+[02-05-2024 11:15:53.887 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[02-05-2024 11:15:53.898 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (ee0e5814-3e33-4219-91b3-211e983b83c4)
+[02-05-2024 11:29:37.019 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[02-05-2024 11:29:37.029 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (4c489513-e0d7-460e-9c7f-945946f8aa30)
+[03-05-2024 11:45:03.449 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[03-05-2024 11:45:03.458 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (56ee81a3-7f09-4a50-8e8b-1e74ab658c26)
+[03-05-2024 12:34:15.131 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[03-05-2024 12:34:15.142 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (ae1ce931-a97c-4b77-a4c2-5ec856fa99fc)
+[03-05-2024 12:40:10.339 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[03-05-2024 12:40:10.349 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (475bfb50-c45b-47ca-8745-72f130530095)
+[08-05-2024 16:27:18.142 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:27:18.161 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (4e5fa97a-faff-486c-8703-bf9f2c1ad4fc)
+[08-05-2024 16:28:34.790 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:28:34.801 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (95afd329-395d-4d33-8a73-74a53fcdf563)
+[08-05-2024 16:31:01.621 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:31:01.635 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (56c36689-7782-41bb-b801-f3cf728e833e)
+[08-05-2024 16:32:56.723 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:32:56.734 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (222b3483-5340-42ed-a16b-c856c522d1be)
+[08-05-2024 16:39:55.729 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:39:55.752 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (e3282327-68c6-4db7-9d79-a04376fc3bea)
+[08-05-2024 16:48:52.920 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 10
+[08-05-2024 16:48:52.953 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (5873f0c7-e961-407a-aa38-c5515a4b2656)

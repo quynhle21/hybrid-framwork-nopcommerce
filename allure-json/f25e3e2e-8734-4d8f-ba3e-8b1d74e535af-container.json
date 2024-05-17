@@ -1,0 +1,1 @@
+{"uuid":"f25e3e2e-8734-4d8f-ba3e-8b1d74e535af","name":"Orange UI Automation","children":["998fa94a-47cd-418b-a5d8-28fc5c679978"],"befores":[{"name":"deleteFileInReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1714042662796,"stop":1714042662810}],"afters":[],"start":1714042662723,"stop":1714042743016}

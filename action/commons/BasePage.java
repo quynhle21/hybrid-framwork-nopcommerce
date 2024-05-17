@@ -308,18 +308,21 @@ public class BasePage {
 		}
 	}
 	
+	//Default Checkbox or Radio
 	public void checkToElement(WebDriver driver, String locator) {
 		if (!getWebElement(driver, locator).isSelected()) {
 			getWebElement(driver, locator).click();
 		}
 	}
 	
+	//Default Checkbox or Radio
 	public void checkToElement(WebDriver driver, String locator, String...restParams) {
 		if (!getWebElement(driver, getDynamicLocator(locator, restParams)).isSelected()) {
 			getWebElement(driver, getDynamicLocator(locator, restParams)).click();
 		}
 	}
 	
+	//Default Checkbox
 	public void uncheckToElement(WebDriver driver, String locator) {
 		if (getWebElement(driver, locator).isSelected()) {
 			getWebElement(driver, locator).click();
@@ -363,6 +366,11 @@ public class BasePage {
 		return getWebElement(driver, locator).isSelected();
 	}
 
+	public boolean isElementSelected(WebDriver driver, String locator, String...restParams) {
+		return getWebElement(driver, getDynamicLocator(locator, restParams)).isSelected();
+	}
+
+	
 	public boolean isElementEnable(WebDriver driver, String locator) {
 		return getWebElement(driver, locator).isEnabled();
 	}
@@ -435,6 +443,10 @@ public class BasePage {
 		sleepInSecond(3);
 	}
 
+	public void clickToElementByJS(WebDriver driver, String locator, String...restParams) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", getWebElement(driver, getDynamicLocator(locator, restParams)));
+		sleepInSecond(3);
+	}
 	public void scrollToElementOnTop(WebDriver driver, String locator) {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
 				getWebElement(driver, locator));
